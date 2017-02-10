@@ -66,7 +66,7 @@ section img {
 }
 
 p{
-	width:50%;
+	width:90%;
 }
 
 ul{
@@ -130,15 +130,15 @@ a:hover, a:focus, a:active{
 /* Styling for button */
 
 .action-button{
-    background-color: 	white;	
+    background-color: white;	
 	border-radius: 2px;
 	border:2px solid #808080;
     color: #808080;
-    padding: 15px 20px;
+    padding: 1% 2%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    /*font-size: 15px;*/
 	-webkit-transition-duration: 0.5s;
 	transition-duration: 0.5s;
 	cursor: pointer;
@@ -151,6 +151,35 @@ a:hover, a:focus, a:active{
 }
 
 .action-button:focus{
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+/* size button */
+
+.price-button{
+    background-color: white;	
+	border-radius: 2px;
+	border:2px solid #808080;
+    color: #808080;
+    padding: .5% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9rem;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	cursor: pointer;
+}
+
+.price-button:hover {
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+.price-button:focus{
 	border:2px solid white;
 	background-color: #808080;
 	color:white;
@@ -170,6 +199,24 @@ a:hover, a:focus, a:active{
 .grid-row{
 	border-top:1px solid gray;
 	border-bottom:1px solid gray;
+}
+
+.product_price {
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+.product_img {
+	float: left;
+}
+
+.product_img img{
+	height: auto;
+	max-width: 100%;
+}
+
+.product_description {
+	padding: 2% 0;
 }
 
 /* 
