@@ -1,0 +1,247 @@
+*{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+
+body {
+  font-family:"open-Sans", sans-serif;
+  /*padding: 2rem;*/
+}
+
+h1.maintitle{
+	color:#808080;
+	display:block;
+	font-size: 2em;
+}
+
+.paragraph{
+	color:#808080;
+	display: inline-block;
+}
+
+
+input [type=text] {
+	border:none;
+	border-bottom: 2px solid #808080;
+	border-radius: 2px;
+	display: inline-block;
+    padding: 10px 15px 10px 15px;
+    margin: 8px 0;
+}
+
+
+[class^='grid-col-']{
+	/*float: left;*/
+	display:inline-block;
+}
+
+
+
+
+/*  CODE IS ONLY HERE TO SEE THE PRODUCT GRID STRUCTURE*/
+
+.container{
+/*position: absolute;*/
+text-align:center;
+}
+.container .block:nth-of-type(even) {
+  background-color: black;
+}
+.container .block:nth-of-type(odd) {
+  background-color: #808080;
+}
+
+.grid-row:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+/* Styling for website grid structure */
+* {
+    box-sizing: border-box;
+}
+
+
+.headerNav{
+	position:fixed;
+	top:0;
+	left:0;
+
+	width: 100%;
+	 height: 100px;
+	 z-index:1;
+}
+
+.footerNav{
+position:fixed;
+	left:0;
+	right:0;
+	width: 100%;
+	 height: 50px;
+}
+
+.grid-col-1{
+	margin-top:100px;
+	width: 100%;
+	height: 600px;
+	margin-bottom:10%;
+	
+}
+
+.grid-col-spacer{
+	width: 100%;
+	height: 100px;
+	margin-bottom:5%;
+	
+}
+
+.grid-col-2{
+	width: 200px;
+	height: 200px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:10%;
+}
+
+.grid-col-3{
+	width: 200px;
+	height: 200px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:10%;
+}
+ 
+ 
+.grid-col-4{
+	width: 50%;
+	height: 100px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:10%;
+} 
+ 
+@media(max-width: 50em){
+	.grid-col-2{
+		width:100%;
+		margin-top:0;
+		margin-left:0;
+		margin-bottom:2%;
+	}
+	
+	
+	.grid-col-3{
+		width: 100px;
+		height: 100px;
+		margin-left:10px;
+		margin-right:10px;
+		margin-bottom:10%;
+	}
+	
+	.grid-col-product{
+	width: 300px;
+	height: 300px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:10%;
+	
+}
+
+	.grid-col-product_discription{
+	width: 300px;
+	height: 300px;
+	margin-left:10px;
+	margin-right:10px;
+	
+	}
+}
+
+.grid-col-product{
+	
+width: 400px;
+	height: 400px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:10%;
+
+	
+}
+
+.grid-col-product_discription{
+	
+width: 400px;
+	height: 400px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:10%;
+	text-align:left;
+	
+
+}
+
+
+.action-button{
+    background-color: 	white;	
+	border-radius: 2px;
+	border:2px solid #808080;
+    color: #808080;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	cursor: pointer;
+	margin-top:40px;
+}
+
+.action-button:hover {
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+.action-button:focus{
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+
+
+
+.action-button-size{
+    background-color: 	white;	
+	border-radius: 2px;
+	border:2px solid #808080;
+    color: #808080;
+	margin-top:20px;
+	margin-right:10px;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	cursor: pointer;
+}
+
+.action-button-size:hover {
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+.action-button-size:focus{
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+
+/* Where I found out to center another Div within a Div http://stackoverflow.com/questions/1269245/centering-floating-divs-within-another-div */
+

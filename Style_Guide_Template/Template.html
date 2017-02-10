@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1>Style Guide Template</h1>
+
+ 
+
+
+    <nav>
+      
+      <p>
+        Go to:
+      	<a href="index.html">Task for 3 Devices</a>
+		<a href="Template.html">Style Guide</a>
+		<a href="citation.html">Citation</a>
+      </p>
+
+    </nav>
+	
+	<h2>Menu</h2>
+			
+		<ul>
+			<li> <a href="#interactive_elements">Interactive Elements</a></li>
+			<li><a href="#text_elements">Text Elements</a></li>
+			<li> <a href="#combined_elements">Combined Elements</a></li>
+		</ul>
+			
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+        <p>.button-nav</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;a href="#" class="button-link"&gt;Default Button&lt;/a&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <a href="#" class="button-link">Default Button</a>
+
+      </section>
+
+      <section>
+        <h2>In-text link</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>a&#123;&#125;</p>
+		
+		<h3>Sample code:</h3>
+		<p>
+				<code>&lt;a href="#"&gt;Default Link&lt;/a&gt;</code>
+		</p>
+		
+		<h3>Rendered element:</h3>
+		<a href="#">Default Link</a>
+      </section>
+
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>button&#123;&#125;</p>
+		
+		<h3>Sample code:</h3>
+		<p><code>&lt;button type="button" class="action-button"&gt;Default Button&lt;/button&gt;</code></p>
+		
+		<h3>Rendered element:</h3>
+		<button type="button" class="action-button">Default Button</button>
+		
+      </section>
+
+      <section>
+        <h2>Text Input Field</h2>
+		
+		<h3>CSS selector:</h3>
+		
+		<h3>Sample code:</h3>
+		<p>
+			<code>
+				&lt;form method="POST" action="#"&gt;
+					&lt;label for="form-name"&gt;Name: &lt;/label&gt;
+					&lt;input id="form-name" type="text" placeholder="Leave a comment!"&gt;
+				&lt;/form&gt;
+			</code>
+		</p>
+		
+		<h3>Rendered element:</h3>
+			<form method="POST" action="#">
+				<label for="form-name">Comment: </label>
+				<input id="form-name" type="text" placeholder="Leave a comment!">
+			</form>
+		
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+
+      <section>
+        <h2>Headings</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>
+			.maintitle
+			.subtitle
+		</p>
+		<h3>Sample code:</h3>
+		<p>
+			<code>
+				&lt;h1 class="maintitle"&gt;Default Main Title&lt;/h1&gt;
+				&lt;h2 class="subtitle"&gt;Default Sub Title&lt;/h2&gt;
+				&lt;h3 class="minititle"&gt;Default Mini Title&lt;/h3&gt;
+			</code>
+		</p>
+		
+		<!-- not sure why h1 title is smaller than both h2 and h3, It was like that when I entered my code. -->
+		<h3>Rendered element:</h3>
+		<h1 class="maintitle">Default Main Title</h1>
+		<h2 class="subtitle">Default Sub Title</h2>
+		<h3 class="minititle">Default Mini Title</h3>
+      </section>
+
+      <section>
+        <h2>Paragraphs</h2>
+		
+		<h3>CSS selector:</h3>
+		.paragraph
+		<h3>Sample code:</h3>
+		<p>
+			<code>
+				&lt;p class="paragraph"&gt; A sample paragraph. &lt;/p&gt;
+			</code>			
+		</p>
+		<h3>Rendered element:</h3>
+		<p class="paragraph">A sample paragraph. </p>
+		
+      </section>
+
+      <section>
+        <h2>Bulleted Lists</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>.bulletlist</p>
+		<h3>Sample code:</h3>
+		<p>
+			<code>
+				&lt;ul class="bulletlist"&gt;
+					&lt;li&gt;sample 1&lt;/li&gt;
+					&lt;li&gt;sample 2&lt;/li&gt;
+					&lt;li&gt;sample 3&lt;/li&gt;
+				&lt;/ul&gt;
+			</code>
+		</p>
+		
+		<h3>Rendered element:</h3>
+		<ul class="bulletlist">
+			<li>sample 1</li>
+			<li>sample 2</li>
+			<li>sample 3</li>
+		</ul>
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>.numberlist</p>
+		<h3>Sample code:</h3>
+		<p>
+			<code>
+				&lt;ol class="numberlist"&gt;
+					&lt;li&gt;sample 1&lt;/li&gt;
+					&lt;li&gt;sample 2&lt;/li&gt;
+					&lt;li&gt;sample 3&lt;/li&gt;
+				&lt;/ol&gt;
+			</code>
+		</p>
+		<h3>Rendered element:</h3>
+		<ol class="numberlist">
+			<li>sample 1</li>
+			<li>sample 2</li>
+			<li>sample 3</li>
+		</ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+	
+	
+      <section>
+        <h2>Main Navigation</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>.button-nav</p>
+		<h3>Sample code:</h3>
+		<p>
+			<code>&lt;a href="#" class="button-link"&gt;Default Button 1&lt;/a&gt;</code>
+			<code>&lt;a href="#" class="button-link"&gt;Default Button 2&lt;/a&gt;</code>
+			<code>&lt;a href="#" class="button-link"&gt;Default Button 3&lt;/a&gt;</code>
+		</p>
+		<h3>Rendered element:</h3>
+		<a href="#" class="button-link">Default Button 1</a>
+		<a href="#" class="button-link">Default Button 2</a>
+		<a href="#" class="button-link">Default Button 3</a>
+		
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>.grid-col-1of3</p>
+		<h3>Sample code:</h3>
+		<p>
+			<code>
+				&lt;div class="container grid-row" &gt;
+				&lt;div class="grid-col-1of3 block">&lt;/div&gt;
+				&lt;div class="grid-col-1of3 block">&lt;/div&gt;
+				&lt;div class="grid-col-1of3 block">&lt;/div&gt;
+				&lt;/div&gt;
+			</code>
+		</p>
+		<h3>Rendered element:</h3>
+		<div class="container grid-row" >
+			  <div class="grid-col-1of3 block"></div>
+			  <div class="grid-col-1of3 block"></div>
+			  <div class="grid-col-1of3 block"></div>
+		</div>
+		
+		
+      </section>
+	  
+	  
+	  
+	  
+	  
+	  
+	    <section>
+        <h2>website grid structure</h2>
+		
+		<h3>CSS selector:</h3>
+		<p>.grid-col-1of3</p>
+		<h3>Sample code:</h3>
+		<p>
+			<code>
+				&lt;div class="container grid-row" &gt;
+				&lt;div class="grid-col-1 block">&lt;/div&gt;
+				&lt;div class="grid-col-2 block">&lt;/div&gt;
+				&lt;div class="grid-col-3 block">&lt;/div&gt;
+				&lt;/div&gt;
+			</code>
+		</p>
+		<h3>Rendered element:</h3>
+		<div class="container grid-row" >
+			  <div class="headerNav block"></div>
+			  <div class="grid-col-1 block"></div>
+			  <div class="grid-col-2 block"></div>
+			  <div class="grid-col-3 block"></div>
+			  <div class="grid-col-4 block"></div>
+		</div>
+		
+		
+		
+		
+      </section>
+	  
+	  <section>
+        <h2>website colors</h2>
+		
+	
+		<h3>Hex code code:</h3>
+		<p>
+			<code>
+			 #808080 and black
+			</code>
+		</p>
+		<h3>Rendered element:</h3>
+		<div class="container grid-row" >
+			  <div class="grid-col-1of3 block"></div>
+			  <div class="grid-col-1of3 block"></div>
+			  
+		</div>
+		
+		
+		
+		
+      </section>
+	  
+		
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+	
+	
+
+  </body>
+</html>
