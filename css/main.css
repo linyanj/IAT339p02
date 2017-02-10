@@ -6,6 +6,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+header {
+	margin: 0 10%;
+}
+
 section h3 {
   margin-bottom: 0;
 }
@@ -56,6 +60,7 @@ li{
 }
 
 footer,footer a{
+	font-size: .8rem;
 	margin: 1% 2%;
     text-align: center;
 }
@@ -165,7 +170,7 @@ input[type=text] {
 }
 
 /* Styling for headers */
-h1 .maintitle{
+header h1{
 	color:#808080;
 	display:block;
 	font-size: 2.5vw;
@@ -173,9 +178,9 @@ h1 .maintitle{
 	text-decoration: none;
 }
 
-.fake-input { position: relative; width:70%; }
-.fake-input input { border:none: background:#fff; display:block; width: 100%; box-sizing: border-box; }
-.fake-input img { position: absolute; top: 10%; right: 5%; max-width: 15%;}
+header a:hover, a:focus, a:active{
+	text-decoration: none;
+}
 
 h2.subtitle{
 	color:#A9A9A9;
