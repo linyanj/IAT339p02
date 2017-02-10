@@ -3,16 +3,7 @@
   Default styling for the style guide 
 */
 body {
-  font-family:"open-Sans", sans-serif;
-  padding: 2rem;
-  margin:0; 
-  padding: 0; 
-}
-
-section:not([id]) {
-  margin: 1em 0;
-  padding: 0.5em 0;
-  border-top: 1px solid #333;
+  font-family: 'Open Sans', sans-serif;
 }
 
 section h3 {
@@ -28,6 +19,30 @@ section code {
   padding: 0.5em 0.75em;
 }
 
+section img {
+	max-height: auto;
+	max-width: 100%;
+	padding: 1% 5%;
+}
+
+.product-row {
+	padding: 1% 10%;
+}
+
+.product-col {
+	float: left;
+}
+
+.product-col img{
+	padding: 10%;
+}
+
+.product-row:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
 p{
 	width:50%;
 }
@@ -40,6 +55,10 @@ li{
 	margin:2%;
 }
 
+footer,footer a{
+	margin: 1% 2%;
+    text-align: center;
+}
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -73,11 +92,9 @@ a.button-link:hover, a.button-link:focus {
 a{
 	display:inline-block;
     color: #808080;
-    padding: 1% 2%;
     text-align: center; 
     text-decoration: none;
     display: inline-block;
-	font-size: 15px;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
@@ -230,8 +247,16 @@ a.button-link:hover a.button-link:focus {
 }
 
 .grid-col {
-	width: 11%;
+	text-align: center;
+	width: 15%;
 }
+
+.product-grid-col {
+	float: left;
+	text-align: center;
+}
+
+
 
 
 /* Styling for product listing */
