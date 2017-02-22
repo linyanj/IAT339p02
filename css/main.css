@@ -25,7 +25,7 @@ header a:hover, a:focus, a:active{
 
 /* Promo & updates banner */
 .banner {
-	margin: 2%;
+	margin: 1% 2%;
 }
 
 /* Form styling */
@@ -68,16 +68,32 @@ section img {
 
 .product-col {
 	float: left;
+	width: 33%;
+	padding: 1%;
+}
+
+.product-col p{
+	padding: 0 5%;
+	margin: 0;
+	font-size: .8rem;
 }
 
 .product-col img{
-	padding: 10%;
+	/*padding: 10%;*/
+}
+
+.related {
+	width: 15%;
 }
 
 .product-row:after {
 	content:"";
 	display:block;
 	clear:both;
+}
+
+p.product_name {
+	font-weight: bold;
 }
 
 ul{
@@ -218,8 +234,9 @@ a:hover, a:focus, a:active{
 }
 
 .product_img {
+	width: 30%;
 	float: left;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 
 .product_img img{
@@ -228,13 +245,18 @@ a:hover, a:focus, a:active{
 }
 
 .product_info {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	padding: 0 15% 0 2%;
 	float: left
+	width: 70%;
 }
 
 .product_info::after {
     clear: both;
+}
+
+p.product_description {
+	padding: 5% 0;
 }
 
 .cart {
@@ -308,34 +330,6 @@ a:hover, a:focus, a:active{
 	font-size: .75rem;
 }
 
-.checkout_button {
-	width: 100%;
-    background-color: white;	
-	border-radius: 2px;
-	border:2px solid #808080;
-    color: #808080;
-    padding: .5% 1%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .9rem;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	cursor: pointer;
-}
-
-.checkout_button:hover {
-	border:2px solid white;
-	background-color: #808080;
-	color:white;
-}
-
-.checkout_button:focus{
-	border:2px solid white;
-	background-color: #808080;
-	color:white;
-}
-
 /* 
   TEXT ELEMENTS -------------------
 */
@@ -396,25 +390,22 @@ h3.minititle{
 /* Styling for nav bar */
 
 a.button-link {
-  
+	width: 100%;
     background-color: 	#808080;	 /* light gray */
     border:none;
     color: white;
-    padding: 15px 20px;
+    padding: .75rem 2rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
-
 }
 
 a.button-link:hover a.button-link:focus {
   background-color: #c0c0c0;
   color: black;
   text-decoration:none;
-
 }
 
 [class^='grid-col']{
