@@ -25,12 +25,382 @@ header a:hover, a:focus, a:active{
 	text-decoration: none;
 }
 
-/* Promo & updates banner */
-/*.banner {
-	margin: 1%;
-}*/
+p{
+	margin:0;
+	padding:0;
+}
 
-/* Form styling */
+
+/*----------------------------------------------------nav style*/
+
+/*navigation icons */
+.nav-main-item img{
+	opacity: .6;
+	max-width: 16px;
+	vertical-align: middle;
+	
+	
+	
+}
+a.nav-main-item img:hover {
+   
+   -webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+    display: inline-block;
+	max-width: 20px;
+	vertical-align: middle;
+	
+	
+}
+
+a.nav-main-item img:focus {
+   
+   -webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+    display: inline-block;
+	max-width: 20px;
+	vertical-align: middle;
+	
+	
+}
+
+
+/*navigation top and bottom line*/
+.grid-row{
+	border-top:1px solid #808080;
+	border-bottom:1px solid #808080;
+}
+
+
+.nav-main{
+	text-align:center;
+	background-color:rgba(0, 0, 0, 0.5);
+}
+
+
+/*------------------------------------------------- all nav grids will have this*/
+[class^='grid-col']{
+	display:inline-block;
+}
+
+.grid-col-nav {
+	text-align: center;
+	width: 7rem;
+	height: auto;
+	/* margin: 15px 0% 15px 0%; */
+	font-size: .8rem;
+}
+
+.grid-col-nav-icon {
+	text-align: center;
+	width: 50px;
+	height: auto;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+
+@media(max-width: 746px ){
+
+	.grid-col-nav{
+		width:100%;
+		margin-left:0px;
+		margin-right: 0px;
+	}
+	
+	.grid-col-nav-icon{
+		text-align: center;
+		width: 50px;
+		height: auto;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+}
+
+
+/*--------------------------------------- Promo & updates banner */
+.banner-item {
+	width:100%; 
+    height:auto; 
+	text-align:center;
+	position:relative;
+	margin-bottom:2%;
+	
+	
+}
+
+.product-col-banner-img{
+	display: inline-block;
+	vertical-align:middle;
+	margin:20px;
+
+	
+}
+
+ .promotext-box{
+ 
+	/* http://www.webdevbydoing.com/how-to-make-responsive-borders/ */
+
+	width: 23%;
+	height: 422px;
+	
+	display:inline-block;
+
+	
+	background-color:rgba(128, 128, 128, 0.5);
+	vertical-align:middle;
+
+}
+
+
+
+.promo-title{
+	width: 100%;
+	display:inline-block;
+	font-size: 1vw;
+	/* http://stackoverflow.com/questions/5703552/css-center-text-horizontal-and-vertical-inside-a-div-block */
+	text-align: center;
+	vertical-align: middle;
+	line-height: 380px;   
+	
+	
+}
+
+
+
+
+h2.promo-title{
+	color:black;
+	font-size: 2.5vw;
+	margin:0;
+}
+
+
+
+
+
+@media(max-width: 1625px){
+
+	.promo-title{
+	width: 100%;
+	font-size: 1.3vw;
+	display:inline-block;   
+	
+	text-align: center;
+	vertical-align: middle;
+	line-height: 270px; 
+
+	}
+	
+	
+ 	.promotext-box{
+		width: 70%;
+		height: 300px;
+		
+		position: absolute;
+		top: 50%;	/* 50% pushes the top side image to half of the page   */
+		left: 50%;	/* 50% pushes the left side image to half of the page   */
+		margin-left: -35%; /* the px needs to be the negative half of the full width set by user  */
+		margin-top: -150px;  /* the px needs to be the negative half of the full height set by user  */
+		box-shadow:0 0 0 5px white;
+		background-color:rgba(128, 128, 128, 0.5);
+		
+	} 
+	
+	
+	
+	
+	h2.promo-title{
+	color:white;
+
+	}
+	
+
+}
+
+
+@media(max-width: 1220px){
+	
+		.promo-title{
+	width: 100%;
+	
+	display:inline-block;   
+	font-size: 1.5vw;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 400px; 
+	
+	}
+	
+	
+	.promotext-box{
+		width: 60%;
+		height: 400px;
+
+		position: absolute;
+		top: 50%;	/* 50% pushes the top side image to half of the page   */
+		left: 50%;	/* 50% pushes the left side image to half of the page   */
+		margin-left: -30%; /* the px needs to be the negative half of the full width set by user  */
+		margin-top: -200px;  /* the px needs to be the negative half of the full height set by user  */
+		box-shadow:0 0 0 5px white;
+		background-color:rgba(128, 128, 128, 0.5);
+		
+	}
+	
+	h2.promo-title{
+	color:white;
+
+	}
+	
+	
+}
+
+@media(max-width: 800px){
+
+
+
+	.promo-title{
+	width: 100%;
+	font-size: 2.5vw;
+	display:inline-block;   
+	
+	text-align: center;
+	vertical-align: middle;
+	line-height: 170px; 
+	}
+	
+	.promotext-box{
+		width: 70%;
+		height: 190px;
+		
+		position: absolute;
+		top: 50%;	/* 50% pushes the top side image to half of the page   */
+		left: 50%;	/* 50% pushes the left side image to half of the page   */
+		margin-left: -35%; /* the px needs to be the negative half of the full width set by user  */
+		margin-top: -100px;  /* the px needs to be the negative half of the full height set by user  */
+		box-shadow:0 0 0 5px white;
+		background-color:rgba(128, 128, 128, 0.5);
+		
+	}
+	
+	h2.promo-title{
+	color:white;
+
+	}
+	
+	h2.subtitle{
+	color:#A9A9A9;
+	/*margin: 10px;*/
+	text-align:center;
+	font-size: 2.5vw;
+}
+
+
+}
+
+@media(max-width: 746px ){
+
+
+	.product-col {
+		width: 50%;
+		margin-bottom:5%;
+	}
+	
+
+
+	header h1{
+		font-size: 5vw;
+	}
+
+	h2{
+		font-size: 4vw;
+	}
+	
+	h2.subtitle{
+	
+	font-size: 4vw;
+	}
+		.product-page {
+		padding: 2% 10% 5% 10%;
+	}
+
+	.product-img {
+		width: 100%;
+	}
+
+	.product-info {
+		width: 100%;
+	}
+
+	.action-button {
+		width: 100%;
+	}
+
+	.product-info h2 {
+		font-size: 1rem;
+	}
+
+	.product-info h3 {
+		font-size: .9rem;
+	}
+
+	.product-info h4 {
+		font-size: 0.8rem;
+	}
+
+	.product-row {
+		padding: 1% 10%;
+		
+	}
+
+	.product-row p {
+		padding: 0 5%;
+	}
+	
+	
+	
+	.product-col p{
+	padding: 0;
+	margin-top: 5%;
+	margin-bottom: 0%;
+	font-size: 2.5vw;
+	
+	}
+	
+	a.pic-link:hover, a.pic-link:focus{
+	box-shadow:0 0 0 2px black;
+
+	}
+	
+	.product_name {
+	font-weight: bold;
+	display:block;
+	width:100%;
+	height:15%;
+	text-align:center;
+	margin-bottom:0;
+	margin-top:200%;
+	}
+
+	.product-row form {
+		width: 100%;
+	    margin: 0 auto;
+	}
+
+	.product-description {
+		width: 100%;
+	}
+
+	p,label {
+		font-size: .8rem;
+	}
+
+	footer,footer a{
+		font-size: .7rem;
+	}
+}
+
+/*-------------------------------------------------------------- Form styling */
 label {
 	display:block;
 }
@@ -51,15 +421,14 @@ section code {
 
 .product-row {
 	padding: 1% 15%;
+	
 }
 
 .product-row h3{
 	text-align:center;
 }
 
-.product-row p{
-	padding: 0 15%;
-}
+
 
 .product-row form {
 	width: 50%;
@@ -73,20 +442,32 @@ section code {
 .product-col {
 	float: left;
 	width: 33%;
-	padding: 1%;
 	display: inline-block;
+	
+	padding: 0% 5% 5% 5%;
+} 
+
+
+a.pic-link{
+	height:auto;
 }
+
+a.pic-link:hover, a.pic-link:focus{
+box-shadow:0 0 0 5px black;
+margin:0;
+}
+
+
+
 
 .product-col p{
-	padding: 0;
-	margin: 0;
-	font-size: .8rem;
+	padding: 0 15%;
+	font-size: 1vw;
+	text-align:center;
+	
 }
 
 
-.product-col img{
-	/*padding: 10%;*/
-}
 
 .related {
 	width: 15%;
@@ -100,7 +481,15 @@ section code {
 
 .product_name {
 	font-weight: bold;
+	display:block;
+	width:100%;
+	height:5%;
+	text-align:center;
+	margin-bottom:0;
+	margin-top:5%;
+	
 }
+
 
 ul{
 	width:50%;
@@ -112,7 +501,8 @@ li{
 
 footer,footer a{
 	font-size: .8rem;
-	margin: 1% 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
     text-align: center;
 }
 
@@ -121,6 +511,9 @@ footer,footer a{
 */
 
 /* Styling for the navigation button */
+
+
+
 a.button-link {
   
     background-color: 	#808080;	 /* light gray */
@@ -133,21 +526,28 @@ a.button-link {
     font-size: 15px;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
-	
 }
 
 a.button-link:hover, a.button-link:focus {
   background-color: #c0c0c0;
   color: black;
   text-decoration:none;
-
 }
 
-/* Styling for link */
 
-a{
+.nav-link{
 	display:inline-block;
-    color: #000000;
+	height:50px;
+	width:auto;
+	
+	text-align: center;
+	vertical-align: middle;
+	line-height: 50px; 
+}
+
+a.nav-link{
+	display:inline-block;
+    color: white;
     text-align: center; 
     text-decoration: none;
     display: inline-block;
@@ -155,10 +555,59 @@ a{
 	transition: all 0.5s ease-out;
 }
 
-a:hover, a:focus, a:active{
-    color: #505050;
-	text-decoration: underline;
+a.nav-link:hover, a.nav-link:focus, a.nav-link:active{
+    color: black;
+	text-decoration: none;
+	 font-weight: bold;
+} 
+
+
+
+
+/*------------------------------------------ Styling for link */
+
+a{
+	display:inline-block;
+    color: white;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	
 }
+
+a:hover, a:focus, a:active{
+    color: black;
+	
+	font-weight: bold;
+
+}
+
+/*----------------------------------------home link*/
+
+.home-link{
+	padding:10px 20px 10px 20px;
+}
+
+a.home-link{
+	display:inline-block;
+    color: #808080;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+a.home-link:hover, a.home-link:focus, a.home-link:active{
+    color: black;
+	text-decoration: none;
+	box-shadow:0 0 0 3px black;
+	
+}
+
+
 
 /* ------------------------------------------------Styling for button */
 
@@ -221,21 +670,9 @@ a:hover, a:focus, a:active{
 	color:white;
 }
 
-.nav-main-item {
-	padding: 5%;
-}
 
-/*navigation icons */
-.nav-main-item img{
-	opacity: .6;
-	max-width: 50%;
-}
 
-/*navigation top and bottom line*/
-.grid-row{
-	border-top:1px solid gray;
-	border-bottom:1px solid gray;
-}
+
 
 /* -------------------------- product page*/
 
@@ -400,8 +837,9 @@ input {
 
 h2.subtitle{
 	color:#A9A9A9;
-	display:block;
 	/*margin: 10px;*/
+	text-align:center;
+	
 }
 
 h3.minititle{
@@ -466,39 +904,9 @@ a.button-link:hover a.button-link:focus {
 	float: left;
 }*/
 
-/*-----------------------------------------------nav css*/
 
-.nav-main{
-	text-align:center;
-}
 
-/*navigation icons */
-.nav-main-item img{
-	opacity: .6;
-	max-width: 50%;
-	vertical-align: middle;
-}
 
-/* all nav grids will have this*/
-[class^='grid-col']{
-	display:inline-block;
-}
-
-.grid-col-nav {
-	text-align: center;
-	width: 5rem;
-	height: auto;
-	margin: 1% 0;
-	font-size: .8rem;
-}
-
-.grid-col-nav-icon {
-	text-align: center;
-	width: 50px;
-	height: auto;
-	margin-top:0px;
-	margin-bottom:0px;
-}
 
 .grid-col {
 	text-align: center;
@@ -511,86 +919,8 @@ a.button-link:hover a.button-link:focus {
 }
 
 
-/*  700px/16= 43.75em  16px is default font size -------------------- IF NAV IS SMALL */
-@media(max-width: 40em){
 
-	.grid-col-nav{
-		width:100%;
-	}
 
-	.product-col {
-		width: 50%;
-	}
-	
-	.grid-col-nav-icon {
-		text-align: center;
-		width: 50px;
-		height: auto;
-		margin-top:10px;
-		margin-bottom:20px;
-	}
-
-	header h1{
-		font-size: 5vw;
-	}
-
-	h3{
-		font-size: 4vw;
-	}
-
-	.product-page {
-		padding: 2% 10% 5% 10%;
-	}
-
-	.product-img {
-		width: 100%;
-	}
-
-	.product-info {
-		width: 100%;
-	}
-
-	.action-button {
-		width: 100%;
-	}
-
-	.product-info h2 {
-		font-size: 1rem;
-	}
-
-	.product-info h3 {
-		font-size: .9rem;
-	}
-
-	.product-info h4 {
-		font-size: 0.8rem;
-	}
-
-	.product-row {
-		padding: 1% 10%;
-	}
-
-	.product-row p {
-		padding: 0 5%;
-	}
-
-	.product-row form {
-		width: 100%;
-	    margin: 0 auto;
-	}
-
-	.product-description {
-		width: 100%;
-	}
-
-	p,label {
-		font-size: .8rem;
-	}
-
-	footer,footer a{
-		font-size: .7rem;
-	}
-}
 
 /* Styling for product listing */
 
