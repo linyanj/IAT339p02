@@ -5,7 +5,72 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color:#808080;
+
 }
+
+
+html, body {
+	height: 100%;
+}
+
+/*--------------------------------------------------Styling for content*/
+
+.content {
+	min-height: 100%;
+  /* equal to footer height */
+	margin-bottom: -10px;
+}
+
+/*--------------------------------------------------centering content button*/
+
+.grid-col-button {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	margin: 15px 0% 15px 0%;
+	font-size: .8rem;
+}
+
+
+
+
+
+/*--------------------------------------------------Styling for footer*/
+
+
+.page-end .content:after {
+/* .push must be the same height as footer */
+
+	
+}
+
+
+
+
+footer,footer a{
+	font-size: 10px;
+	/* padding: 0.5% 0 0.5% 0 ; */
+    text-align: center;
+}
+
+footer a{
+	margin: 0px;
+}
+
+footer{	
+	background-color:#808080;
+
+}
+
+
+.grid-col-footer {
+	text-align: center;
+	width: 7rem;
+	height: auto;
+	/* margin: 15px 0% 15px 0%; */
+	font-size: .8rem; 
+}
+/*--------------------------------------------------Styling for images*/
 
 img {
 	height: auto;
@@ -29,6 +94,10 @@ p{
 	margin:0;
 	padding:0;
 }
+
+
+
+
 
 
 /*----------------------------------------------------nav style*/
@@ -108,6 +177,7 @@ a.nav-main-item img:focus {
 		margin-right: 0px;
 	}
 	
+	
 	.grid-col-nav-icon{
 		text-align: center;
 		width: 50px;
@@ -116,6 +186,9 @@ a.nav-main-item img:focus {
 		margin-bottom: 20px;
 	}
 }
+
+
+
 
 
 /*--------------------------------------- Promo & updates banner */
@@ -219,6 +292,91 @@ h2.promo-title{
 }
 
 
+
+
+
+/* ------------------------------------------------Styling for button */
+
+.action-button{
+    background-color: white;	
+	border-radius: 2px;
+	border:2px solid #808080;
+    color: #808080;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	cursor: pointer;
+	width: 10%;
+	
+	text-align:center;
+}
+
+.action-button:hover {
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+.action-button:focus{
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+
+
+a.signup-link{
+	display:inline-block;
+    color: #808080;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	font-size: 0.8rem;
+	margin-bottom: 10%;
+}
+
+a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
+    color: black;
+	text-decoration: none;
+	 font-weight: bold;
+} 
+
+/* size button */
+
+.size-button{
+    background-color: white;	
+	border-radius: 2px;
+	border:2px solid #808080;
+    color: #808080;
+    padding: .5% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9rem;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	cursor: pointer;
+	padding:5px 10px 5px 10px;
+	margin: 5px 5px 20px 5px;
+}
+
+.size-button:hover {
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+.size-button:focus{
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+
 @media(max-width: 1220px){
 	
 		.promo-title{
@@ -293,9 +451,40 @@ h2.promo-title{
 	/*margin: 10px;*/
 	text-align:center;
 	font-size: 2.5vw;
+    } 
+
+
 }
 
 
+
+.product-col {
+	float: left;
+	width: 33%;
+	display: inline-block;
+	
+	padding: 0% 5% 5% 5%;
+} 
+
+
+.product-row {
+	padding: 1% 15%;
+	
+}
+
+.product-row h3{
+	text-align:center;
+}
+
+
+
+.product-row form {
+	width: 55%;
+    margin: 0 auto;
+}
+
+.login_page {
+	text-align: center;
 }
 
 @media(max-width: 746px ){
@@ -333,7 +522,7 @@ h2.promo-title{
 	}
 
 	.action-button {
-		width: 100%;
+		width: 25%;
 	}
 
 	.product-info h2 {
@@ -405,10 +594,12 @@ label {
 	display:block;
 }
 
-.hint {
+a.hint {
 	font-style: italic;
 	font-size: .7rem;
-	margin: 0 0 5% 0;
+	color: #808080;
+
+	
 }
 
 
@@ -419,33 +610,9 @@ section code {
 }
 
 
-.product-row {
-	padding: 1% 15%;
-	
-}
-
-.product-row h3{
-	text-align:center;
-}
 
 
 
-.product-row form {
-	width: 50%;
-    margin: 0 auto;
-}
-
-.login_page {
-	text-align: center;
-}
-
-.product-col {
-	float: left;
-	width: 33%;
-	display: inline-block;
-	
-	padding: 0% 5% 5% 5%;
-} 
 
 
 a.pic-link{
@@ -499,12 +666,7 @@ li{
 	margin:2%;
 }
 
-footer,footer a{
-	font-size: .8rem;
-	margin-top: 1%;
-	margin-bottom: 1%;
-    text-align: center;
-}
+
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -609,66 +771,6 @@ a.home-link:hover, a.home-link:focus, a.home-link:active{
 
 
 
-/* ------------------------------------------------Styling for button */
-
-.action-button{
-    background-color: white;	
-	border-radius: 2px;
-	border:2px solid #808080;
-    color: #808080;
-    padding: 1% 2%;
-    text-align: center;
-    text-decoration: none;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	cursor: pointer;
-	width: 30%;
-	
-	text-align:center;
-}
-
-.action-button:hover {
-	border:2px solid white;
-	background-color: #808080;
-	color:white;
-}
-
-.action-button:focus{
-	border:2px solid white;
-	background-color: #808080;
-	color:white;
-}
-
-/* size button */
-
-.size-button{
-    background-color: white;	
-	border-radius: 2px;
-	border:2px solid #808080;
-    color: #808080;
-    padding: .5% 1%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: .9rem;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	cursor: pointer;
-	padding:5px 10px 5px 10px;
-	margin: 5px 5px 20px 5px;
-}
-
-.size-button:hover {
-	border:2px solid white;
-	background-color: #808080;
-	color:white;
-}
-
-.size-button:focus{
-	border:2px solid white;
-	background-color: #808080;
-	color:white;
-}
 
 
 
@@ -802,6 +904,11 @@ a.home-link:hover, a.home-link:focus, a.home-link:active{
 	text-align: left;
 }
 
+.hint{
+	font-size: 8px;
+	width: 75%
+}
+
 .cart_total p {
 	text-align: right;
 	font-size: 0.95rem;
@@ -830,9 +937,19 @@ input {
 	border-radius: 2px;
 	display: block;
     padding: 1%;
-    margin: 1% 0;
+    
     width: 100%;
+	transition: all 0.0s ease-out;
 }
+
+.input-spacing{
+	margin: 0.5% 0 10% 0;
+}
+
+label{
+	transition: all 0.0s ease-out;
+}
+
 
 
 h2.subtitle{
