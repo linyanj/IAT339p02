@@ -16,78 +16,110 @@
 
 	<body>
 
-		<header>
-			<h1><a href="index.html">Sovereign</a></h1>
-		</header>
+		<section class="content">
+			<header>
+				<h1><a href="index.html" class="home-link">Sovereign</a></h1>
+			</header>
 
-		<nav class="nav-main grid-row">
+			<nav class="nav-main grid-row">
 
-			<div class="grid-col-nav">
-				<a href="new_arrivals.html">New Arrivals</a>
-			</div>
+				<div class="grid-col-nav">
+					<a href="new_arrivals.html" class="nav-link">New Arrivals</a>
+				</div>
 
-			<div class="grid-col-nav">
-				<a href="new_arrivals.html">Tops</a>
-			</div>
+				<div class="grid-col-nav">
+					<a href="new_arrivals.html"  class="nav-link">Tops</a>
+				</div>
 
-			<div class="grid-col-nav">
-				<a href="new_arrivals.html">Bottoms</a>
-			</div>
+				<div class="grid-col-nav">
+					<a href="new_arrivals.html" class="nav-link">Bottoms</a>
+				</div>
 
-			<div class="grid-col-nav">
-				<a href="new_arrivals.html">Footwears</a>
-			</div>
+				<div class="grid-col-nav">
+					<a href="new_arrivals.html" class="nav-link">Footwears</a>
+				</div>
 
-			<div class="grid-col-nav">
-				<a href="new_arrivals.html">Accessories</a>
-			</div>
+				<div class="grid-col-nav">
+					<a href="new_arrivals.html" class="nav-link">Accessories</a>
+				</div>
 
-			<div class="grid-col-nav-icon">
-				<a href="search.html" class="nav-main-item"><img src="img/search_icon.png"></a>
-			</div>
-			
-			<div class="grid-col-nav-icon">
-				<a href="login.html" class="nav-main-item"><img src="img/account.png"></a>
-			</div>
-			
-			<div class="grid-col-nav-icon">
-				<a href="cart.html" class="nav-main-item"><img src="img/cart.png"></a>
-			</div>
-			
-		</nav>
-
-		<section>
-			<div class="product-row">
-				<h3>My shopping cart</h3>
 				
-				<div class="cart_container">
-					<div class="cart_img">
-						<a href="adidas_sneaker.html"><img src="img/products/adidas_sneaker.jpg"></a>
-					</div>
-					<div class="cart_info">
-						<h3>Adidas Originals Superstar Sneaker</h3>
-						<h4>$80</h4>
-						<p>Quantity: 1</p>
-						<p>Size: 8.5</p>
-						<p>Color: White</p>
-						<p><a href="#">Modify</a> | <a href="#">Remove</a></p>
-					</div>
-					<div class="cart_total">
-						<h3>Cart total</h3>
-						<p>Order value: $80</p>
-						<p>Shipping: $7.99</p>
-						<hr>
-						<p>Total: $87.99*</p>
-						<p class="hint">*Item prices exclude tax</p>
-						<a href="checkout.html" class="button-link">Checkout</a>
-						<p class="hint">Prices and shipping costs are not confirmed until you've reached checkout.</p>
+				<div class="grid-col-nav-icon">
+					<a href="search.html" class="nav-main-item" ><img src="img/search_icon.png" alt="Search Icon"></a>
+				</div>
+					
+				<div class="grid-col-nav-icon">
+					<a href="login.html" class="nav-main-item"><img src="img/account.png" alt="Account Icon"></a>
+				</div>
+				
+				<div class="grid-col-nav-icon">
+					<a href="cart.html" class="nav-main-item"><img src="img/cart.png" alt="Cart Icon"></a>
+				</div>
+					
+			
+				
+				
+			</nav>
+
+			<section>
+				<div class="product-row">
+					<h2 class="subtitle">My shopping cart</h2>
+					
+					<div class="cart_container">
+						
+						<!-- <div class="cart_info">
+							<a href="adidas_sneaker.html"><img src="img/products/adidas_sneaker.jpg" class="cart_img"></a>
+						
+							<h3 class="minititle">Adidas Originals Superstar Sneaker</h3>
+							<h4>$80</h4>
+							<p>Quantity: 1</p>
+							<p>Size: 8.5</p>
+							<p>Color: White</p>
+							<a href="#" class="edit-link">Modify</a>
+						</div> -->
+						
+						<div class="product-col">
+							<a href="adidas_sneaker.html" class="pic-link"><img src="img/products/adidas_sneaker.jpg" alt="Adidas Originals Superstar Sneaker"></a>
+			
+							
+						</div>
+						
+						<div class="product-col-cart">
+						<p class="product_name">Adidas Originals Superstar Sneaker</p>
+							<p>$80</p>
+							<p>Quantity: 1</p>
+							<p>Size: 8.5</p>
+							<p>Color: White</p>
+							<a href="#" class="edit-link">Remove</a>
+						</div>
+						
+						<div class="cart_total">
+							<h3>Cart total</h3>
+							<p>Order value: $80</p>
+							<p>Shipping: $7.99</p>
+							<hr>
+							<p>Total: $87.99*</p>
+							<p class="hint">*Item prices exclude tax</p>
+							<a href="checkout.html" class="action-button-cart">Checkout</a>
+							<p class="hint">Prices and shipping costs are not confirmed until you've reached checkout.</p>
+						</div>
+						
 					</div>
 				</div>
-			</div>
+			</section>
 		</section>
 
-		<footer>
-			<a href="about_us.html">About Us</a>|<a href="contact_us.html">Contact Us</a>
-		</footer>
+			<footer class="page-end">
+				
+				<div class="grid-col-footer">
+					<a href="about_us.html" class="nav-link">About Us</a>
+				</div>
+
+				<div class="grid-col-footer">
+					<a href="contact_us.html" class="nav-link">Contact Us</a>
+				</div>
+				
+			</footer>
+		
 	</body>
 </html>
