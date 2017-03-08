@@ -41,6 +41,7 @@ p{
 	
 	
 	
+	display: none;
 }
 a.nav-main-item img:hover {
    
@@ -222,6 +223,7 @@ h2.promo-title{
 @media(max-width: 1220px){
 	
 		.promo-title{
+	.promo-title{
 	width: 100%;
 	
 	display:inline-block;   
@@ -513,6 +515,7 @@ footer,footer a{
 /* Styling for the navigation button */
 
 
+}
 
 a.button-link {
   
@@ -520,10 +523,12 @@ a.button-link {
     border:none;
     color: white;
     padding: 15px 20px;
+    padding: 1% 2%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
+    font-size: 1.1vw;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
