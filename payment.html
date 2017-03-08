@@ -16,66 +16,91 @@
 
 	<body>
 
-		<header>
-			<h1><a href="index.html">Sovereign</a></h1>
-		</header>
+		<section class="content">
+			<header>
+				<h1><a href="index.html" class="home-link">Sovereign</a></h1>
+			</header>
 
-		<nav class="nav-main grid-row">
+			<nav class="nav-main grid-row">
 
-			<div class="grid-col-nav">
-				<a href="new_arrivals.html">New Arrivals</a>
-			</div>
+				<div class="grid-col-nav">
+					<a href="new_arrivals.html" class="nav-link">New Arrivals</a>
+				</div>
 
-			<div class="grid-col-nav">
-				<a href="new_arrivals.html">Tops</a>
-			</div>
+				<div class="grid-col-nav">
+					<a href="new_arrivals.html"  class="nav-link">Tops</a>
+				</div>
 
-			<div class="grid-col-nav">
-				<a href="new_arrivals.html">Bottoms</a>
-			</div>
+				<div class="grid-col-nav">
+					<a href="new_arrivals.html" class="nav-link">Bottoms</a>
+				</div>
 
-			<div class="grid-col-nav">
-				<a href="new_arrivals.html">Footwears</a>
-			</div>
+				<div class="grid-col-nav">
+					<a href="new_arrivals.html" class="nav-link">Footwears</a>
+				</div>
 
-			<div class="grid-col-nav">
-				<a href="new_arrivals.html">Accessories</a>
-			</div>
+				<div class="grid-col-nav">
+					<a href="new_arrivals.html" class="nav-link">Accessories</a>
+				</div>
 
-			<div class="grid-col-nav-icon">
-				<a href="search.html" class="nav-main-item"><img src="img/search_icon.png"></a>
-			</div>
+				
+				<div class="grid-col-nav-icon">
+					<a href="search.html" class="nav-main-item" ><img src="img/search_icon.png" alt="Search Icon"></a>
+				</div>
+					
+				<div class="grid-col-nav-icon">
+					<a href="login.html" class="nav-main-item"><img src="img/account.png" alt="Account Icon"></a>
+				</div>
+				
+				<div class="grid-col-nav-icon">
+					<a href="cart.html" class="nav-main-item"><img src="img/cart.png" alt="Cart Icon"></a>
+				</div>
+					
 			
-			<div class="grid-col-nav-icon">
-				<a href="login.html" class="nav-main-item"><img src="img/account.png"></a>
-			</div>
-			
-			<div class="grid-col-nav-icon">
-				<a href="cart.html" class="nav-main-item"><img src="img/cart.png"></a>
-			</div>
-			
-		</nav>
+				
+				
+			</nav>
 
-		<section>
-			<div class="product-row">
-				<h3>Payment</h3>
-				<p class="login_page">Please enter your payment information</p>
-				<form method="POST" action="#">
-					<label for="card-number">Credit Card Number:	</label>
-					<input id="card-number" type="text">
-					<label for="expiration-date">Expiration Date:	</label>
-					<input id="expiration-date" type="month">
-					<label for="card-holder-name">Card Holder Name:	</label>
-					<input id="card-holder-name" type="text">
-				</form>
-				<p class="login_page"><a href="confirm.html" class="action-button">Continue</a></p>
+			<section>
+				<div class="product-row">
+					<h2 class="subtitle">Payment</h2>
+					<p class="login_page button-spacer">Please enter your payment information</p>
+					<form method="POST" action="#">
+						
+						<label for="card-holder-name">Card Holder Name:	</label>
+						<input id="card-holder-name" type="text" class="input-spacing" placeholder="Melanie Walls">
+						
+						<label for="card-number">Credit Card Number:	</label>
+						<input id="card-number" type="text" class="input-spacing" placeholder="1001 4564 6454 5646">
+						
+						<label for="expiration-date">Expiration Date:	</label>
+						<input id="expiration-date" type="month" class="input-spacing">
+						
+						<label for="expiration-date">CVV:	</label>
+						<input id="expiration-date" type="text" class="input-spacing" placeholder="652">
+					</form>
+					
+					<div class="grid-col-button">
+					<a href="confirm.html" class="action-button button-spacer2">Continue</a>
+					</div>
+					
 
-			</div>
+				</div>
+			</section>
+		
 		</section>
+			
+			<footer class="page-end">
+				
+				<div class="grid-col-footer">
+					<a href="about_us.html" class="nav-link">About Us</a>
+				</div>
 
-		<footer>
-			<a href="about_us.html">About Us</a>|<a href="contact_us.html">Contact Us</a>
-		</footer>
+				<div class="grid-col-footer">
+					<a href="contact_us.html" class="nav-link">Contact Us</a>
+				</div>
+				
+			</footer>
 
 	</body>
 </html>
