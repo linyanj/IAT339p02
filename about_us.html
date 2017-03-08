@@ -21,7 +21,9 @@
 				<h1><a href="index.html" class="home-link">Sovereign</a></h1>
 			</header>
 
-			<nav class="nav-main grid-row">
+      		<button id="nav-toggle" class="hidden hamburger_menu" aria-hidden="true" aria-controls="nav-items">MENU</button>
+
+			<nav class="nav-main grid-row" id="nav-items">
 
 				<div class="grid-col-nav">
 					<a href="new_arrivals.html" class="nav-link">New Arrivals</a>
@@ -75,14 +77,18 @@
 		</section>
 		<footer class="page-end">
 				
-				<div class="grid-col-footer">
-					<a href="about_us.html" class="nav-link">About Us</a>
-				</div>
+			<div class="grid-col-footer">
+				<a href="about_us.html" class="nav-link">About Us</a>
+			</div>
 
-				<div class="grid-col-footer">
-					<a href="contact_us.html" class="nav-link">Contact Us</a>
-				</div>
+			<div class="grid-col-footer">
+				<a href="contact_us.html" class="nav-link">Contact Us</a>
+			</div>
 				
 		</footer>
+		
+		<script src="js/zepto.js"></script>
+	    <script src="js/nav_menu.js"></script>
+
 	</body>
 </html>

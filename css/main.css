@@ -113,11 +113,14 @@ p{
 	opacity: .6;
 	max-width: 16px;
 	vertical-align: middle;
-	
-	
-	
+		
+}
+
+#nav-toggle.hidden, #nav-items.hidden {
+	visibility: hidden;
 	display: none;
 }
+
 a.nav-main-item img:hover {
    
    -webkit-transition: all 0.3s ease-out;
@@ -136,8 +139,6 @@ a.nav-main-item img:focus {
     display: inline-block;
 	max-width: 20px;
 	vertical-align: middle;
-	
-	
 }
 
 
@@ -317,8 +318,6 @@ a.nav-main-item img:focus {
 	
 	
 }
-
-
 
 
 h2.promo-title{
@@ -503,7 +502,6 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 
 @media(max-width: 1220px){
 	
-		.promo-title{
 	.promo-title{
 	width: 100%;
 	
@@ -952,7 +950,12 @@ li{
 
 /* Styling for the navigation button */
 
-
+.hamburger_menu{
+	width: 100%;
+    color: white;
+	text-align:center;
+	border: none;
+    background-color: 	#808080;
 }
 
 a.button-link {
@@ -960,12 +963,10 @@ a.button-link {
     background-color: 	#808080;	 /* light gray */
     border:none;
     color: white;
-    padding: 15px 20px;
     padding: 1% 2%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
     font-size: 1.1vw;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
@@ -1003,8 +1004,6 @@ a.nav-link:hover, a.nav-link:focus, a.nav-link:active{
 	text-decoration: none;
 	 font-weight: bold;
 } 
-
-
 
 
 /*------------------------------------------ Styling for link */
