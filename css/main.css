@@ -1126,6 +1126,7 @@ h3.minititle{
 	color:#808080;
 	display: inline-block;
 	width:50%;
+	text-align: left;
 }
 
 /* Styling for bullet lists */
