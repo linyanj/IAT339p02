@@ -14,7 +14,8 @@ html, body {
 }
 
 h4{
-	margin:0;
+	
+	margin-bottom:5%;
 }
 
 /*--------------------------------------------------Styling for content*/
@@ -97,6 +98,7 @@ header a:hover, a:focus, a:active{
 p{
 	margin:0;
 	padding:0;
+	
 }
 
 
@@ -238,6 +240,10 @@ a.nav-main-item img:focus {
 
 @media(max-width: 746px ){
 	
+	
+	h3.minititle{
+	margin:0;
+	}
 	.cart_total .hint {
 	margin: 0 0 5% 0; 
 	}
@@ -382,6 +388,7 @@ h2.promo-title{
 	cursor: pointer;
 	width: 20%;
 	
+	
 	text-align:center;
 }
 
@@ -396,6 +403,35 @@ h2.promo-title{
 	background-color: #808080;
 	color:white;
 }
+/*--------------------------------------------add to cart button*/
+.action-button-add-cart{
+    background-color: white;	
+	border-radius: 2px;
+	border:2px solid #808080;
+    color: #808080;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	cursor: pointer;
+	width: 80%;
+	display: inline-block;
+	margin:0 0 20px 0;
+	text-align:center;
+}
+
+.action-button-add-cart:hover {
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+.action-button-add-cart:focus{
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
 
 .button-spacer2{
 	margin-bottom: 10%;
@@ -403,6 +439,10 @@ h2.promo-title{
 
 .button-spacer{
 	margin-bottom: 20px;
+}
+
+.spacer-other-products{
+	margin-top:5%;
 }
 
 a.signup-link{
@@ -444,7 +484,7 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	transition-duration: 0.5s;
 	cursor: pointer;
 	padding:5px 10px 5px 10px;
-	margin: 5px 5px 20px 5px;
+	margin: 0px 5px 15px 5px;
 }
 
 .size-button:hover {
@@ -634,19 +674,88 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 }
 
 
-	.confirm-col {
+.confirm-col {
 		width: 50%;
 		
 		float: left;
 		display: inline-block;
 	
 		padding: 0% 5% 5% 5%;
-	}
+}
+	
+	
+.product-info{
+	/* display:inline-block;
+	/*border: 1px solid black;
+	padding: 0 2%;
+	width: 50%; */
+	
+	float: left;
+	
+	border: 1px solid #808080;
+	width: 50%;
+	display: inline-block;
+	margin-top: 5%;
+	padding: 0% 5% 5% 5%;
+	text-align:center;
+}
 
+
+
+.product-img {
+	/*border: 1px solid black;*/
+	/* display:inline-block;
+	width: 50%;
+		margin-bottom:5%; */
+	margin-top:5%;
+	float: left;
+	width: 50%;
+	display: inline-block;
+	
+	
+}
+
+.product-img img{
+	width:75%;
+}
+
+.product-discription {
+	text-align:left;
+	width: 100%;
+	
+	/*border: 1px solid black;*/
+}
 
 @media(max-width: 746px ){
 
+	.product-discription {
+		text-align:left;
+		width: 70%;
+		display:inline-block;
+		
+		/*border: 1px solid black;*/
+	}
 
+	.action-button-add-cart{
+		background-color: white;	
+		border-radius: 2px;
+		border:2px solid #808080;
+		color: #808080;
+		padding: 1% 2%;
+		text-align: center;
+		text-decoration: none;
+		-webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
+		cursor: pointer;
+		width: 50%;
+		
+		margin:0 0 20px 0;
+		text-align:center;
+	}
+
+	.size-button{		
+		margin: 10% 5px 20px 5px;
+	}
 	.action-button-cart{
 		
 		width: 70%;
@@ -671,13 +780,15 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 
 	.product-col {
 		width: 50%;
-		margin-bottom:5%;
+		padding-bottom:8%;
 	}
 
 	.product-col-cart {
 		width: 50%;
 		margin-bottom:5%;
 	}
+	
+
 
 
 	header h1{
@@ -693,15 +804,20 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	font-size: 4vw;
 	}
 		.product-page {
-		padding: 2% 10% 5% 10%;
+		/*padding: 2% 10% 5% 10%;*/
 	}
 
 	.product-img {
-		width: 100%;
+		width:100%;
+		margin-bottom:5%;
+	
 	}
+	
+	
 
 	.product-info {
-		width: 100%;
+	width: 100%;
+	margin-top:0;
 	}
 
 	.action-button {
@@ -712,13 +828,9 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 		font-size: 1rem;
 	}
 
-	.product-info h3 {
-		font-size: .9rem;
-	}
+	
 
-	.product-info h4 {
-		font-size: 0.8rem;
-	}
+	
 
 	.product-row {
 		padding: 1% 10%;
@@ -756,9 +868,7 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	    margin: 0 auto;
 	}
 
-	.product-description {
-		width: 100%;
-	}
+	
 
 	p,label {
 		font-size: .8rem;
@@ -945,8 +1055,9 @@ a.home-link:hover, a.home-link:focus, a.home-link:active{
 /* -------------------------- product page*/
 
 .product-page{
-	padding: 2% 15% 5% 15%;
+	/*padding: 2% 15% 5% 15%;*/
 	/*border: 1px solid red;*/
+	padding: 1% 10%;
 	
 }
 
@@ -966,37 +1077,24 @@ a.home-link:hover, a.home-link:focus, a.home-link:active{
 	font-size: 1.25rem;
 }
 
-.product-img {
-	/*border: 1px solid black;*/
-	width: 25%;
-	float: left;
-	display:inline-block;
-}
 
-.product-description {
-	text-align:left;
-	width: 80%;
-	/*border: 1px solid black;*/
+
+
+.img-width{
+	
 }
 
 
-.product-info{
-	display:inline-block;
-	/*border: 1px solid black;*/
-	padding: 0 2%;
-	width: 75%;
-}
 
-.product-info h2 {
+
+
+
+/* .product-info h2 {
 	margin: 0;
 	font-size: 1.1rem;
-}
+} */
 
-.product-info h3 {
-	margin: 0;
-	text-align: left;
-	font-size: 1rem;
-}
+
 
 .product-info h4 {
 	font-size: 0.85rem;
@@ -1115,7 +1213,7 @@ h3.minititle{
 	color:black;
 /* 	display:block; */
 	/*margin: 10px;*/
-	margin-bottom:10px;
+	
 }
 
 
