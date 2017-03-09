@@ -726,7 +726,45 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	/*border: 1px solid black;*/
 }
 
+.space{
+	margin-bottom:5%;
+}
+
+.left{
+	text-align:left;
+}
+
+.rating{
+	width:100%;
+	display:inline-block;
+	text-align:left;
+}
+
+.star > span:hover:before {
+   content: "\2605";
+   position: absolute;
+}
+
+.star {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.star > span:hover:before, .star > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+.size{
+	font-size: 35px;
+}
+
 @media(max-width: 746px ){
+	
+	.rating{
+	width:75%;
+	display:inline-block;
+	}
 
 	.product-discription {
 		text-align:left;
@@ -796,12 +834,12 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	}
 
 	h2{
-		font-size: 4vw;
+		font-size: 3vw;
 	}
 	
 	h2.subtitle{
 	
-	font-size: 4vw;
+	font-size: 3vw;
 	}
 		.product-page {
 		/*padding: 2% 10% 5% 10%;*/
@@ -824,9 +862,7 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 		width: 25%;
 	}
 
-	.product-info h2 {
-		font-size: 1rem;
-	}
+
 
 	
 
