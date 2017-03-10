@@ -18,6 +18,8 @@ h4{
 	margin-bottom:5%;
 }
 
+
+
 /*--------------------------------------------------Styling for content*/
 
 .content {
@@ -149,9 +151,18 @@ a.nav-main-item img:focus {
 
 .nav-main{
 	text-align:center;
-	background-color:rgba(0, 0, 0, 0.5);
+	background-color:#808080;
 }
 
+.opacity{
+	text-align:center;
+	background-color:rgba(128, 128, 128, 0.5);
+}
+
+.black{
+	text-align:center;
+	background-color:black;
+}
 
 /*------------------------------------------------- all nav grids will have this*/
 [class^='grid-col']{
@@ -236,6 +247,11 @@ a.nav-main-item img:focus {
 	text-align: center;
 }
 
+.styleguide-paragraph{
+	color: #808080;
+    display: inline-block;
+    text-align: left;
+}
 
 
 @media(max-width: 746px ){
@@ -303,6 +319,22 @@ a.nav-main-item img:focus {
 
 }
 
+ .promotext-box-demo{
+ 
+	/* http://www.webdevbydoing.com/how-to-make-responsive-borders/ */
+
+	width: 100%;
+	height: 300px;
+	
+	display:inline-block;
+
+	
+	background-color:rgba(128, 128, 128, 0.5);
+	vertical-align:middle;
+
+}
+
+
 
 
 .promo-title{
@@ -326,11 +358,37 @@ h2.promo-title{
 	margin:0;
 }
 
+.style-guide-grid{
+	/* display:inline-block;
+	/*border: 1px solid black;
+	padding: 0 2%;
+	width: 50%; */
+	
+	float: left;
+	
+	border: 1px solid #808080;
+	width: 40%;
+	height:550px;
+	display: inline-block;
+	margin: 5% 5% 5% 5%;
+	
+	padding: 0% 5% 5% 5%;
+	text-align:center;
+}
+
 
 
 
 
 @media(max-width: 1625px){
+
+	.style-guide-grid{
+		
+		height:600px;
+		
+	}
+
+
 
 	.promo-title{
 	width: 100%;
@@ -399,6 +457,35 @@ h2.promo-title{
 }
 
 .action-button:focus{
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+.action-button-demo{
+    background-color: white;	
+	border-radius: 2px;
+	border:2px solid #808080;
+    color: #808080;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	cursor: pointer;
+	width: 70%;
+	
+	
+	text-align:center;
+}
+
+.action-button-demo:hover {
+	border:2px solid white;
+	background-color: #808080;
+	color:white;
+}
+
+.action-button-demo:focus{
 	border:2px solid white;
 	background-color: #808080;
 	color:white;
@@ -502,6 +589,13 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 
 @media(max-width: 1220px){
 	
+	
+	.style-guide-grid{
+
+	height:700px;
+	
+	}
+
 		.promo-title{
 	width: 100%;
 	
@@ -537,6 +631,12 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 }
 
 @media(max-width: 800px){
+	
+	.style-guide-grid{
+		
+		height:700px;
+		
+	}
 
 
 
@@ -589,6 +689,8 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	padding: 0% 5% 5% 5%;
 
 } 
+
+
 
 .product-col-cart {
 	float: left;
@@ -699,6 +801,9 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	padding: 0% 5% 5% 5%;
 	text-align:center;
 }
+
+
+
 
 
 
@@ -851,7 +956,11 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	
 	}
 	
-	
+	.style-guide-grid{
+	width: 100%;
+	margin-left:0;
+	margin-right:0;
+	}
 
 	.product-info {
 	width: 100%;
@@ -1060,6 +1169,10 @@ a:hover, a:focus, a:active{
 
 /*----------------------------------------home link*/
 
+.demo-font-size{
+	
+}
+
 .home-link{
 	padding:10px 20px 10px 20px;
 }
@@ -1080,6 +1193,7 @@ a.home-link:hover, a.home-link:focus, a.home-link:active{
 	box-shadow:0 0 0 3px black;
 	
 }
+
 
 
 
@@ -1232,6 +1346,10 @@ input {
 	margin: 0.5% 0 10% 0;
 }
 
+.input-spacing-citation{
+	margin: 0.5% 0 2% 0;
+}
+
 label{
 	transition: all 0.0s ease-out;
 }
@@ -1248,7 +1366,7 @@ h2.subtitle{
 h3.minititle{
 	color:black;
 /* 	display:block; */
-	/*margin: 10px;*/
+	margin-bottom: 10px;
 	
 }
 
