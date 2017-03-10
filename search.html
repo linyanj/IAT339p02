@@ -20,7 +20,9 @@
 				<h1><a href="index.html" class="home-link">Sovereign</a></h1>
 			</header>
 
-			<nav class="nav-main grid-row">
+      		<button id="nav-toggle" class="hidden hamburger_menu" aria-hidden="true" aria-controls="nav-items">MENU</button>
+
+			<nav class="nav-main grid-row" id="nav-items">
 
 				<div class="grid-col-nav">
 					<a href="new_arrivals.html" class="nav-link">New Arrivals</a>
@@ -89,16 +91,24 @@
 				</div>
 			</section>
 		</section>
-		<section class="page-end">
-			<footer>
-				
-				<div class="grid-col-footer">
-					<a href="about_us.html" class="nav-link">About Us</a>
-				</div>
 
-				<div class="grid-col-footer">
-					<a href="contact_us.html" class="nav-link">Contact Us</a>
-				</div>
+		<footer class="page-end">
+				
+			<div class="grid-col-footer">
+				<a href="about_us.html" class="nav-link">About Us</a>
+			</div>
+
+			<div class="grid-col-footer">
+				<a href="contact_us.html" class="nav-link">Contact Us</a>
+			</div>
+
+			<div class="grid-col-footer">
+				<a href="citation.html" class="nav-link" target="blank">Citations</a>
+			</div>
+
+			<div class="grid-col-footer">
+				<a href="https://github.com/linyanj/IAT339p02" class="nav-link" target="blank">Github</a>
+			</div>
 				
 				<div class="grid-col-footer">
 					<a href="style_guide-01.html" class="nav-link">Style Guide</a>
@@ -109,7 +119,9 @@
 				</div>
 				
 			</footer>
-		</section>
 
+	    <script src="js/zepto.js"></script>
+	    <script src="js/nav_menu.js"></script>
+		</section>
 	</body>
 </html>

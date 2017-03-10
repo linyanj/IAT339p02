@@ -20,7 +20,9 @@
 				<h1><a href="index.html" class="home-link">Sovereign</a></h1>
 			</header>
 
-			<nav class="nav-main grid-row">
+      		<button id="nav-toggle" class="hidden hamburger_menu" aria-hidden="true" aria-controls="nav-items">MENU</button>
+
+			<nav class="nav-main grid-row" id="nav-items">
 
 				<div class="grid-col-nav">
 					<a href="new_arrivals.html" class="nav-link">New Arrivals</a>
@@ -71,26 +73,22 @@
 			
 			<section>
 				
-					<div class="banner-item">
-							<div class="promotext-box">
-								<div class="promo-title">
-									 <a href="new_arrivals.html" class="promo-title"> <h2>SS17</h2></a>
-								</div>
+				<div class="banner-item">
+						<div class="promotext-box">
+							<div class="promo-title">
+								 <a href="new_arrivals.html" class="promo-title"> <h2>2017 Spring Favs</h2></a>
 							</div>
-						
-							<div class="product-col-banner-img">
-								<a href="new_arrivals.html" class="pic-link">
-									<picture>
-										<source media="(max-width:1220px)" srcset="img/promo-1-small.jpg">
-										<image src="img/promo-1-large.jpg" alt="SS17">
-									</picture>
-								</a>
-							</div>
-						
-							
-							
+						</div>
 					
-					</div>
+						<div class="product-col-banner-img">
+							<a href="new_arrivals.html" class="pic-link">
+								<picture>
+									<source media="(max-width:1220px)" srcset="img/promo-1-small.jpg">
+									<img src="img/promo-1-large.jpg" alt="SS17">
+								</picture>
+							</a>
+						</div>
+				</div>
 			
 			
 				<div class="banner-item">	
@@ -98,7 +96,7 @@
 						<a href="new_arrivals.html" class="pic-link">
 							<picture>
 								<source media="(max-width:1220px)" srcset="img/promo-2-small.jpg">
-								<image src="img/promo-2-large.jpg" alt="Timeless Style">
+								<img src="img/promo-2-large.jpg" alt="Timeless Style">
 							</picture>
 						</a>
 					</div> 
@@ -110,15 +108,8 @@
 							
 						</div>
 					</div>
-					
-					
-					
 				</div>
 			</section>
-			
-			
-			
-			
 			
 			<section>
 				<div class="product-row">
@@ -158,15 +149,23 @@
 		</section>
 		
 		
-			<footer class="page-end">
+		<footer class="page-end">
 				
-				<div class="grid-col-footer">
-					<a href="about_us.html" class="nav-link">About Us</a>
-				</div>
+			<div class="grid-col-footer">
+				<a href="about_us.html" class="nav-link">About Us</a>
+			</div>
 
-				<div class="grid-col-footer">
-					<a href="contact_us.html" class="nav-link">Contact Us</a>
-				</div>
+			<div class="grid-col-footer">
+				<a href="contact_us.html" class="nav-link">Contact Us</a>
+			</div>
+
+			<div class="grid-col-footer">
+				<a href="citation.html" class="nav-link" target="blank">Citations</a>
+			</div>
+
+			<div class="grid-col-footer">
+				<a href="https://github.com/linyanj/IAT339p02" class="nav-link" target="blank">Github</a>
+			</div>
 				
 				<div class="grid-col-footer">
 					<a href="style_guide-01.html" class="nav-link">Style Guide</a>
@@ -178,6 +177,8 @@
 				
 			</footer>
 		
+	    <script src="js/zepto.js"></script>
+	    <script src="js/nav_menu.js"></script>
 
 	</body>
 

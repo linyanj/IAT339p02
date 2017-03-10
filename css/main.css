@@ -8,7 +8,6 @@ body {
 
 }
 
-
 html, body {
 	height: 100%;
 }
@@ -72,9 +71,8 @@ footer{
 
 .grid-col-footer {
 	text-align: center;
-	width: 7rem;
+	width: 10%;
 	height: auto;
-	/* margin: 15px 0% 15px 0%; */
 	font-size: .8rem; 
 }
 /*--------------------------------------------------Styling for images*/
@@ -115,10 +113,14 @@ p{
 	opacity: .6;
 	max-width: 16px;
 	vertical-align: middle;
-	
-	
-	
+		
 }
+
+#nav-toggle.hidden, #nav-items.hidden {
+	visibility: hidden;
+	display: none;
+}
+
 a.nav-main-item img:hover {
    
    -webkit-transition: all 0.3s ease-out;
@@ -137,8 +139,6 @@ a.nav-main-item img:focus {
     display: inline-block;
 	max-width: 20px;
 	vertical-align: middle;
-	
-	
 }
 
 
@@ -279,6 +279,12 @@ a.nav-main-item img:focus {
 		margin-top: 10px;
 		margin-bottom: 20px;
 	}
+
+	.grid-col-footer {
+		width: 20%;
+		height: auto; 
+		text-align: center;
+	}
 }
 
 
@@ -350,8 +356,6 @@ a.nav-main-item img:focus {
 }
 
 
-
-
 h2.promo-title{
 	color:black;
 	font-size: 2.5vw;
@@ -391,14 +395,13 @@ h2.promo-title{
 
 
 	.promo-title{
-	width: 100%;
-	font-size: 1.3vw;
-	display:inline-block;   
-	
-	text-align: center;
-	vertical-align: middle;
-	line-height: 270px; 
-
+		width: 100%;
+		font-size: 1.3vw;
+		display:inline-block;   
+		
+		text-align: center;
+		vertical-align: middle;
+		line-height: 270px; 
 	}
 	
 	
@@ -599,12 +602,6 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 		.promo-title{
 	width: 100%;
 	
-	display:inline-block;   
-	font-size: 1.5vw;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 400px; 
-	
 	}
 	
 	
@@ -623,8 +620,7 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	}
 	
 	h2.promo-title{
-	color:white;
-
+		color:white;
 	}
 	
 	
@@ -638,16 +634,14 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 		
 	}
 
-
-
 	.promo-title{
-	width: 100%;
-	font-size: 2.5vw;
-	display:inline-block;   
-	
-	text-align: center;
-	vertical-align: middle;
-	line-height: 170px; 
+		width: 100%;
+		font-size: 2.5vw;
+		display:inline-block;   
+		
+		text-align: center;
+		vertical-align: middle;
+		line-height: 170px; 
 	}
 	
 	.promotext-box{
@@ -665,15 +659,14 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	}
 	
 	h2.promo-title{
-	color:white;
+		color:white;
 
 	}
 	
 	h2.subtitle{
-	color:#A9A9A9;
-	/*margin: 10px;*/
-	text-align:center;
-	font-size: 2.5vw;
+		color:#A9A9A9;
+		text-align:center;
+		font-size: 2.5vw;
     } 
 
 
@@ -685,8 +678,7 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	float: left;
 	width: 33%;
 	display: inline-block;
-	
-	padding: 0% 5% 5% 5%;
+	padding: 2.5%;
 
 } 
 
@@ -777,12 +769,10 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 
 
 .confirm-col {
-		width: 50%;
-		
-		float: left;
-		display: inline-block;
-	
-		padding: 0% 5% 5% 5%;
+	width: 50%;
+	float: left;
+	display: inline-block;
+	padding: 0% 5% 5% 5%;
 }
 	
 	
@@ -906,24 +896,24 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	}
 	
 	.confirm-recipt {
-	width: 90%;
-	border: 1px solid #808080;
-	/* float: right; */
-	display:inline-block;
-	padding: 1.5% 3%;
+		width: 90%;
+		border: 1px solid #808080;
+		/* float: right; */
+		display:inline-block;
+		padding: 1.5% 3%;
 	}
 
 	.cart_total {
-	width: 80%;
-	border: 1px solid #808080;
-	/* float: right; */
-	display:inline-block;
-	padding: 1.5% 3%;
+		width: 80%;
+		border: 1px solid #808080;
+		/* float: right; */
+		display:inline-block;
+		padding: 1.5% 3%;
 	}
 
 	.product-col {
 		width: 50%;
-		padding-bottom:8%;
+		padding-bottom:5%;
 	}
 
 	.product-col-cart {
@@ -946,7 +936,8 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	
 	font-size: 3vw;
 	}
-		.product-page {
+	
+	.product-page {
 		/*padding: 2% 10% 5% 10%;*/
 	}
 
@@ -963,8 +954,8 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	}
 
 	.product-info {
-	width: 100%;
-	margin-top:0;
+		width: 100%;
+		margin-top:0;
 	}
 
 	.action-button {
@@ -989,22 +980,22 @@ a.signup-link:hover, a.signup-link:focus, a.signup-link:active{
 	
 	
 	.product-col p{
-	padding: 0;
-	margin-top: 5%;
-	font-size: 2.5vw;
+		padding: 0;
+		margin-top: 5%;
+		font-size: 2.5vw;
 	
 	}
 	
 	a.pic-link:hover, a.pic-link:focus{
-	box-shadow:0 0 0 2px black;
+		box-shadow:0 0 0 2px black;
 
 	}
 	
 	.product_name {
-	font-weight: bold;
-	display:block;
-	width:100%;
-	height:15%;
+		font-weight: bold;
+		display:block;
+		width:100%;
+		height:15%;
 	
 	}
 
@@ -1095,18 +1086,24 @@ li{
 
 /* Styling for the navigation button */
 
-
+.hamburger_menu{
+	width: 100%;
+    color: white;
+	text-align:center;
+	border: none;
+    background-color: 	#808080;
+}
 
 a.button-link {
   
     background-color: 	#808080;	 /* light gray */
     border:none;
     color: white;
-    padding: 15px 20px;
+    padding: 1% 2%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    font-size: 1.1vw;
 	-webkit-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
@@ -1143,8 +1140,6 @@ a.nav-link:hover, a.nav-link:focus, a.nav-link:active{
 	text-decoration: none;
 	 font-weight: bold;
 } 
-
-
 
 
 /*------------------------------------------ Styling for link */
